@@ -19,6 +19,6 @@ public class CircleTest
     {
         var expectedArea = Math.PI * testedRadius * testedRadius;
         var actualArea = circle.Area;
-        Assert.AreEqual(expectedArea, actualArea);
+        Assert.That(actualArea, Is.EqualTo(expectedArea));
     }
 }

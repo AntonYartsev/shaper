@@ -51,7 +51,7 @@ public class TriangleTest
         var p = (acuteSides[0] + acuteSides[1] + acuteSides[2]) / 2;
         var expectedArea = Math.Sqrt(p * (p - acuteSides[0]) * (p - acuteSides[1]) * (p - acuteSides[2]));
         var actualArea = acuteTriangle.Area;
-        Assert.AreEqual(expectedArea, actualArea);
+        Assert.That(actualArea, Is.EqualTo(expectedArea));
     }
     
     [Test]
@@ -60,7 +60,7 @@ public class TriangleTest
         var p = (rectangularSides[0] + rectangularSides[1] + rectangularSides[2]) / 2;
         var expectedArea = Math.Sqrt(p * (p - rectangularSides[0]) * (p - rectangularSides[1]) * (p - rectangularSides[2]));
         var actualArea = rectangularTriangle.Area;
-        Assert.AreEqual(expectedArea, actualArea);
+        Assert.That(actualArea, Is.EqualTo(expectedArea));
     }
 
     [Test][Description("Just for development test")]
