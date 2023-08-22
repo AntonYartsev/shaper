@@ -1,4 +1,4 @@
-## Simple shapes library
+## 1. Simple shapes library
 
 ### Requires
 - net7.0
@@ -27,3 +27,5 @@
    ``` shell
     dotnet run --project play
    ```
+## 2. Mysql test case 
+See **itcat.sql**
